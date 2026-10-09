@@ -1,0 +1,4 @@
+order_id,quantity,unit_price
+CSV-001,2,12.50
+CSV-002,1,15.00
+CSV-BAD,0,8.25

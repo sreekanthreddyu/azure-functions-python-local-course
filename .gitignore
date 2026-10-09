@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+local.settings.json
+.azurite/
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+*.log
+.coverage
+htmlcov/
