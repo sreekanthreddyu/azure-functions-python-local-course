@@ -59,7 +59,7 @@ Invoke-RestMethod -Method Post `
 ## Check versions
 
 ```powershell
-py -3.12 --version
+py -3.13 --version
 func --version
 .\.venv\Scripts\python.exe -m pip --version
 ```

@@ -8,7 +8,7 @@ Prepare one local Python environment that can run and test Azure Functions.
 
 Install:
 
-1. [Python 3.12 x64](https://www.python.org/downloads/)
+1. [Python 3.13 x64](https://www.python.org/downloads/)
 2. [Visual Studio Code](https://code.visualstudio.com/)
 3. VS Code **Python** extension
 4. VS Code **Azure Functions** extension
@@ -28,7 +28,7 @@ Use either MSI or npm. Do not install both.
 Open a new PowerShell terminal:
 
 ```powershell
-py -3.12 --version
+py -3.13 --version
 func --version
 where.exe func
 ```
@@ -36,7 +36,7 @@ where.exe func
 Expected:
 
 ```text
-Python 3.12.x
+Python 3.13.x
 4.x.x
 ```
 
@@ -50,16 +50,24 @@ From the repository root:
 
 The script:
 
-1. Creates `.venv` with Python 3.12.
+1. Creates `.venv` with Python 3.13.
 2. Installs the runtime and test dependencies.
 3. Copies `local.settings.json.example` to `local.settings.json` if needed.
 
 It does not change your PowerShell execution policy. It calls the venv Python executable directly.
 
+If you already have a `.venv` created with another Python version, rename it first to keep it as a backup, for example:
+
+```powershell
+Rename-Item .venv .venv-py312
+```
+
+Then rerun `setup.ps1` to create a Python 3.13 environment.
+
 If your organization blocks `.ps1` scripts, use these commands instead:
 
 ```powershell
-py -3.12 -m venv .venv
+py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
 Copy-Item local.settings.json.example local.settings.json

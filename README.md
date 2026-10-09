@@ -4,7 +4,7 @@ Learn Azure Functions on Windows without an Azure account, subscription, Azure C
 
 The required learning path takes about **8 hours**. Allow up to **1 additional hour** for installation or troubleshooting. Optional exercises do not count toward completion.
 
-The course starts with an HTTP function, then introduces timers, queues, blobs, testing, and Durable Functions. All examples use Python 3.12, a project-level virtual environment, Azure Functions Core Tools 4, the Python v2 programming model, and Azurite for local Azure Storage.
+The course starts with an HTTP function, then introduces timers, queues, blobs, testing, and Durable Functions. All examples use Python 3.13, a project-level virtual environment, Azure Functions Core Tools 4, the Python v2 programming model, and Azurite for local Azure Storage.
 
 ## What you will build
 
@@ -37,7 +37,7 @@ flowchart TD
 
 ## Fast setup
 
-After installing Python 3.12, VS Code, Azure Functions Core Tools 4, and the VS Code Azurite extension:
+After installing Python 3.13, VS Code, Azure Functions Core Tools 4, and the VS Code Azurite extension:
 
 ```powershell
 git clone <YOUR-REPOSITORY-URL>
@@ -72,12 +72,12 @@ docs/                           Step-by-step lessons
 ## Supported baseline
 
 - Windows 10 or 11
-- Python 3.12 x64
+- Python 3.13 x64
 - Azure Functions Core Tools 4.x
 - Python v2 programming model
 - Azurite for Functions host state, Blob Storage, Queue Storage, and Durable state
 
-Python 3.12 is used because it has broad Azure Functions hosting-plan compatibility if you later decide to deploy. Deployment is outside this course.
+Python 3.13 is a generally available Azure Functions runtime for Linux-hosted apps. This course uses it for local development on Windows; deploying to Azure is outside the course, and Python Functions aren't supported on Windows hosting.
 
 ## Verification
 
