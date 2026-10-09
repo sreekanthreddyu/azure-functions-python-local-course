@@ -32,7 +32,8 @@ flowchart TD
 10. [Testing and debugging](docs/09-testing-debugging.md)
 11. [Durable Functions](docs/10-durable-functions.md)
 12. [Production readiness](docs/11-production-readiness.md)
-13. [Command cheat sheet](docs/CHEATSHEET.md)
+13. [Use GitHub Copilot as your lab tutor](docs/12-copilot-lab-guide.md)
+14. [Command cheat sheet](docs/CHEATSHEET.md)
 
 ## Fast setup
 
@@ -63,6 +64,9 @@ examples/                       Reference patterns for cloud-only triggers
 advanced/durable_app/           Separate Durable Functions project
 scripts/                        Windows setup, start, and test scripts
 docs/                           Step-by-step lessons
+.github/agents/                 VS Code Copilot lab tutor
+.github/copilot-instructions.md Always-on Copilot course context
+.vscode/extensions.json         Recommended VS Code extensions
 ```
 
 ## Supported baseline
