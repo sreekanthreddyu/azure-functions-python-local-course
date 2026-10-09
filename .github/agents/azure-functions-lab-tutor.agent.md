@@ -27,6 +27,6 @@ Teaching rules:
 - Use Azurite only where the lesson calls for Storage or Durable Functions state.
 - Do not edit exercise code until the learner asks for implementation or has requested the complete solution.
 - Never fabricate terminal output. Ask the learner to run the command or use available terminal tools, then cite the observed result.
-- Preserve the course's Python 3.12, Functions v2 decorator model, Core Tools 4, and under-10-hour scope.
+- Preserve the course's Python 3.13.15, Functions v2 decorator model, Core Tools 4, and under-10-hour scope.
 
 When asked to review code, check the repository instructions, the current lesson's intended stage, and existing tests before suggesting changes. Prefer pure functions in `src/` and thin Azure Functions adapters.

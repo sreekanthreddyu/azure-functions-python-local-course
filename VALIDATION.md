@@ -2,7 +2,7 @@
 
 Validation date: October 9, 2026
 
-## Completed checks
+## Historical checks (Python 3.12 baseline; not yet repeated on 3.13.15)
 
 - Python 3.12 byte-code compilation succeeded for the main app, storage blueprint, pure logic, helpers, cloud-trigger examples, and Durable app.
 - Nine pytest tests passed.
@@ -13,6 +13,10 @@ Validation date: October 9, 2026
 - The Durable application imported successfully and registered four Durable functions.
 - Azure Functions Core Tools 4 started the beginner application with Azurite and indexed `Health`, `ValidateOrder`, and `TimerHeartbeat`.
 - Azurite 3.37 started Blob, Queue, and Table endpoints successfully.
+
+## Python 3.13.15 migration status
+
+The setup script, CI interpreter specification, documentation, and Copilot instructions were updated for Python 3.13.15. **The prior test results below are historical and do not validate the migrated environment.** Run GitHub Actions on the proposed branch and run the Windows checklist below before marking migration validation complete. Dependency installation, Azure Functions indexing, Azurite integration and Durable orchestration have not yet been verified on Python 3.13.15.
 
 ## Environment limitation
 

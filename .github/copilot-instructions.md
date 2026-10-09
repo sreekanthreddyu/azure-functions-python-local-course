@@ -32,7 +32,7 @@
 ## Implementation rules
 
 - Use the Azure Functions Python v2 decorator model.
-- Target Python 3.12 and Azure Functions Core Tools 4.
+- Target Python 3.13.15 and Azure Functions Core Tools 4.
 - Preserve `AzureWebJobsStorage=UseDevelopmentStorage=true` and `DataStorage=UseDevelopmentStorage=true` for local work.
 - Keep storage-trigger registration disabled until the learner reaches the storage lessons.
 - Keep handlers thin and move deterministic transformations into `src/` so they can be tested without the Functions host or Azurite.
