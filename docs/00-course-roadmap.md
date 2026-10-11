@@ -59,6 +59,8 @@ Azurite is part of the initial setup. Storage-backed Queue and Blob functions re
 
 Do not start with Durable Functions. First understand ordinary HTTP, timer, queue, and blob triggers.
 
-## Optional tutor in VS Code
+## Optional AI tutors
 
 If GitHub Copilot Chat is available to you, select the repository's **Azure Functions Lab Tutor** to work through a lesson one checkpoint at a time. See [Use GitHub Copilot as your lab tutor](12-copilot-lab-guide.md). Copilot is optional and does not change the course time budget or require an Azure account.
+
+If OpenAI Codex is available to you, open the repository root in Codex and ask it to guide the same checkpoint-based workflow. See [Use OpenAI Codex as your lab tutor](13-codex-lab-guide.md). Codex is also optional and does not replace the lesson documents or observed terminal output.

@@ -33,7 +33,8 @@ flowchart TD
 11. [Durable Functions](docs/10-durable-functions.md)
 12. [Production readiness](docs/11-production-readiness.md)
 13. [Use GitHub Copilot as your lab tutor](docs/12-copilot-lab-guide.md)
-14. [Command cheat sheet](docs/CHEATSHEET.md)
+14. [Use OpenAI Codex as your lab tutor](docs/13-codex-lab-guide.md)
+15. [Command cheat sheet](docs/CHEATSHEET.md)
 
 ## Fast setup
 
@@ -66,6 +67,7 @@ scripts/                        Windows setup, start, and test scripts
 docs/                           Step-by-step lessons
 .github/agents/                 VS Code Copilot lab tutor
 .github/copilot-instructions.md Always-on Copilot course context
+AGENTS.md                       OpenAI Codex course instructions
 .vscode/extensions.json         Recommended VS Code extensions
 ```
 
@@ -88,6 +90,10 @@ Run the tests:
 ```
 
 The pure Python tests verify validation, money calculations, and CSV handling. The storage lessons provide manual integration checks because they require a running local Functions host and Azurite.
+
+## Optional AI lab tutors
+
+The repository supports both GitHub Copilot and OpenAI Codex without requiring either tool for the course. Copilot uses `.github/copilot-instructions.md` and the custom tutor in `.github/agents/`. Codex uses `AGENTS.md`, which also points to the shared Copilot course rules so architecture and safety guidance stay consistent. See the [Copilot guide](docs/12-copilot-lab-guide.md) or [Codex guide](docs/13-codex-lab-guide.md).
 
 ## Completion standard
 
