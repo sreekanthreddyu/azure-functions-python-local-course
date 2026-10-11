@@ -64,4 +64,4 @@ Idempotent means that processing the same event again does not create an incorre
 
 ## Checkpoint
 
-Identify the trigger and output binding on `SubmitOrder` in `function_app.py`.
+Identify the trigger and output binding on `SubmitOrder` in `storage_functions.py`. Then explain what `connection="DataStorage"` means.
